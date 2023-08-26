@@ -1,0 +1,42 @@
+{
+  "name": "react18-ssr",
+  "version": "1.0.0",
+  "description": "Individual practice projects on React18 and SSR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./build/server/server_bundle.js",
+    "build:server": "webpack --config ./config/server.config.js --watch",
+    "build:client": "webpack --config ./config/client.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangkun1994/React18-SSR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangkun1994/React18-SSR/issues"
+  },
+  "homepage": "https://github.com/yangkun1994/React18-SSR#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "nodemon": "^3.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.9.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
